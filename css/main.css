@@ -93,7 +93,12 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-
+.container {
+	
+	width: 75%;
+	margin: auto;
+   	
+}
 
 
 
