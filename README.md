@@ -1,4 +1,3 @@
-homodigitalis
-=============
+# Homo Digitalis
 
-For my book Homo Digitalis
+The website for my book Homo Digitalis.
