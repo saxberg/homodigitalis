@@ -100,11 +100,17 @@ textarea {
    	
 }
 
+.center {
+	text-align: center;
+}
 
+.pull-right {
+	float: right;
+}
 
-
-
-
+.nodeco {
+	text-decoration: none;
+}
 
 
 
