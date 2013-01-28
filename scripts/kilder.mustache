@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+	<meta charset="utf-8">
+	<title>{{title}} - Kildefortegnelse</title>
+	<meta name="description" content="{{description}}">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="lib/style.min.css">
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<!-- Google Analytics I -->
+	<script>
+	var _gaq = _gaq || [];
+	_gaq.push(
+		['_require', 'inpage_linkid', '//www.google-analytics.com/plugins/ga/inpage_linkid.js'],
+		['_setAccount', 'UA-37754087-1'],
+		['_trackPageview']
+	);
+	</script>
+</head>
+<body>
+
+	<aside id="topnav" class="navbar navbar-inverse navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<a class="brand" href="/">{{title}}</a>
+				<nav>
+					<ul class="nav">
+						<li><a href="http://dpf.dk/produkt/b%C3%B8ger/8393/homo-digitalis">Køb bogen</a></li>
+						<li><a href="/#Natasha">Om forfatteren</a></li>
+						<li><a href="kilder.html">Kilder</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</aside>
+
+	<div class="container">
+
+		<article>
+			<h1>{{title}} <small>Kildefortegnelse</small></h1>
+			<div id="sources">
+				<ol>
+					{{#sources}}
+					<li><b>Teknologi</b>
+						<ol>
+						{{#tech}}
+							<li><a href="{{url}}">{{title}}</a></li>
+						{{/tech}}
+						</ol>
+					</li>
+					<li><b>Trends</b>
+						<ol>
+						{{#trends}}
+							<li><a href="{{url}}">{{title}}</a></li>
+						{{/trends}}
+						</ol>
+					</li>
+					<li><b>Cases</b>
+						<ol>
+						{{#cases}}
+							<li><a href="{{url}}">{{title}}</a></li>
+						{{/cases}}
+						</ol>
+					</li>
+					<li><b>Statistik</b>
+						<ol>
+						{{#stats}}
+							<li><a href="{{url}}">{{title}}</a></li>
+						{{/stats}}
+						</ol>
+					</li>
+					<li><b>Studier og analyser</b>
+						<ol>
+						{{#studies}}
+							<li><a href="{{url}}">{{title}}</a></li>
+						{{/studies}}
+						</ol>
+					</li>
+					<li><b>Mennesker og adfærd</b>
+						<ol>
+						{{#people}}
+							<li><a href="{{url}}">{{title}}</a></li>
+						{{/people}}
+						</ol>
+					</li>
+					<li><b>Forskning</b>
+						<ol>
+						{{#science}}
+							<li><a href="{{url}}">{{title}}</a></li>
+						{{/science}}
+						</ol>
+					</li>
+					<li><b>Fakta</b>
+						<ol>
+						{{#fact}}
+							<li><a href="{{url}}">{{title}}</a></li>
+						{{/fact}}
+						</ol>
+					</li>
+					{{/sources}}
+				</ol>
+			</div>
+		</article>
+	
+	</div>
+
+	<!-- scripts -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+	<script src="lib/app.min.js"></script>
+	<!-- Google Analytics II -->
+	<script src="//www.google-analytics.com/ga.js" async="async"></script>
+
+</body>
+</html>

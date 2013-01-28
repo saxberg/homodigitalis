@@ -1,4 +1,5 @@
 body {
+	position: relative;
 	background-color: #f5f6f7;
 	padding-top: 50px;
 }
@@ -26,21 +27,26 @@ footer {
 	margin-top: 20px;
 	.affix {
 		top: 70px;
+		bottom: auto;
+	}
+	.affix-bottom {
+		position: absolute;
+		top: auto;
+		bottom: 420px;
 	}
 }
 
 #sources {
 	margin-top: 20px;
-	div {
-		column-count: 3;
-		column-gap: 20px;
-		-moz-column-count: 3;
-		-moz-column-gap: 20px;
-		-webkit-column-count: 3;
-		-webkit-column-gap: 20px;
-	}
+	column-count: 3;
+	column-gap: 20px;
+	-moz-column-count: 3;
+	-moz-column-gap: 20px;
+	-webkit-column-count: 3;
+	-webkit-column-gap: 20px;
 }
 
-#natasha {
+#Natasha {
 	margin-top: 20px;
+	height: 300px;
 }

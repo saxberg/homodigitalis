@@ -1,14 +1,14 @@
 jQuery(function($){
-
+	
 	// set affix for book menu
 	$('#bookindex ol').affix({
 		offset: {
 			top: function () {
 				var pos = $('#bookexcerpt').position();
-				return pos.top - $('#topnav').height();
+				return pos.top - $('#topnav').outerHeight(true);
 			},
 			bottom: function () {
-				return $('#sources').height() + $('#natasha').height();
+				return $('#Natasha').outerHeight(true);
 			}
 		}
 	});
@@ -22,9 +22,11 @@ jQuery(function($){
 		var url = $(this).attr('href');
 		try { 
 			_gaq.push(['_trackEvent', 'Outbound Links', url]);
-			_gaq.push(function(){
-				document.location.href = url;
-			});
+			if (url.indexOf('tel:') !== 0) {
+				_gaq.push(function(){
+					document.location.href = url;
+				});
+			}
 		} catch (err) {
 			document.location.href = url;
 		}
