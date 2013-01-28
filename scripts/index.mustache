@@ -9,6 +9,15 @@
 	<!--[if lt IE 9]>
 	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
+	<!-- Google Analytics I -->
+	<script>
+    var _gaq = _gaq || [];
+	_gaq.push(
+		['_require', 'inpage_linkid', '//www.google-analytics.com/plugins/ga/inpage_linkid.js'],
+	    ['_setAccount', 'UA-37754087-1'],
+	    ['_trackPageview']
+	);
+	</script>
 </head>
 <body data-spy="scroll" data-target="#bookindex" data-offset="250">
 
@@ -18,7 +27,7 @@
 				<a class="brand" href="/">{{title}}</a>
 				<nav>
 					<ul class="nav">
-						<li><a href="http://dpf.dk/node/1250">Køb bogen</a></li>
+						<li><a href="http://dpf.dk/produkt/b%C3%B8ger/8393/homo-digitalis">Køb bogen</a></li>
 						<li><a href="#natasha">Om forfatteren</a></li>
 						<li><a href="#sources">Kilder</a></li>
 					</ul>
@@ -30,7 +39,7 @@
 	<div class="container">
 
 		<section id="slide1">
-			<img src="img/hd-9788777068393-3d.png" alt="{{title}}">
+			<img src="img/homodigitalis-9788777068393-3d.png" alt="{{title}}">
 		</section>
 		
 		<section id="bookexcerpt" class="row">
@@ -195,7 +204,7 @@
 					<p>Natasha Friis Saxberg er direktør og stifter af <a href="http://www.gignal.com/" rel="me">Gignal</a>, som præsenterer indhold på tværs af sociale netværk på virksomheders hjemmesider og på storskærme til events.</p>
 					<ul class="nav nav-pills">
 						<li><a href="http://natasha.saxberg.dk/" rel="me" itemprop="url">natasha.saxberg.dk</a></li>
-						<li><a><span itemprop="telephone">+45 23901797</span></a></li>
+						<li><a href="tel:+4523901797"><span itemprop="telephone">+45 23901797</span></a></li>
 						<li><a href="mailto:natasha@saxberg.dk" itemprop="email">natasha@saxberg.dk</a></li>
 						<li><a href="http://www.linkedin.com/in/saxberg" rel="me">LinkedIn</a></li>
 						<li class="hide"><a href="https://plus.google.com/107429763602135454170?rel=author" rel="me">G+</a></li>
@@ -214,14 +223,8 @@
 	<!-- scripts -->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
 	<script src="lib/app.min.js"></script>
-
-	<!-- Google Analytics -->
-	<script>
-	var _gaq=[['_setAccount','UA-37754087-1'],['_trackPageview']];
-	(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-	g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-	s.parentNode.insertBefore(g,s)}(document,'script'));
-	</script>
+	<!-- Google Analytics II -->
+	<script src="//www.google-analytics.com/ga.js" async="async"></script>
 
 </body>
 </html>
