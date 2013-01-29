@@ -1,13 +1,13 @@
 {
-    "name": "HomoDigitalis"
-  , "description": ""
-  , "version": "0.1.0"
-  , "homepage": "http://homodigitalis.org/"
-  , "author": "Webcom"
-  , "devDependencies": {
-      "grunt-recess": "0.3.x",
-      "grunt-templater": "0.0.x",
-      "grunt-contrib-uglify": "0.1.1rc6",
-      "hogan.js": "2.0.x"
-  }
+	"name": "HomoDigitalis",
+	"description": "Website for the book Homo Digitalis",
+	"version": "0.1.1",
+	"homepage": "http://homodigitalis.org/",
+	"author": "Webcom",
+	"devDependencies": {
+		"grunt-recess": "0.3.x",
+		"grunt-templater": "0.0.x",
+		"grunt-contrib-uglify": "0.1.1rc6",
+		"hogan.js": "2.0.x"
+	}
 }
