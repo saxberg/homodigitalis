@@ -1,66 +1,11 @@
-body {
-	position: relative;
-	background-color: #f5f6f7;
-	padding-top: 50px;
-}
-
-footer {
-	margin-top: 20px;
-	background-color: #000;
-	color: #ddd;
-	padding: 50px;
-	a {
-		color: #fff;
-	}
-}
-
-.center {
-	text-align: center;
-}
-
-.anchor {
-	padding-top: 60px;
-	margin-top: -60px;
-}
-
-#slide1 {
-	margin: 25px auto;
-	text-align: center;
-	img {
-		width: 847px;
-		height: 673px;
-	}
-}
-
-#bookindex {
-	margin-top: 20px;
-	.affix {
-		top: 70px;
-		bottom: auto;
-	}
-	.affix-bottom {
-		position: absolute;
-		top: auto;
-		bottom: 420px;
-	}
-}
-
-#sources {
-	margin-bottom: 40px;
-	h1 {
-		margin: 40px auto;
-	}
-	section {
-		column-count: 3;
-		column-gap: 20px;
-		-moz-column-count: 3;
-		-moz-column-gap: 20px;
-		-webkit-column-count: 3;
-		-webkit-column-gap: 20px;
-	}
-}
-
-#Natasha {
-	margin-top: 20px;
-	height: 300px;
-}
+@import '../components/bootstrap/less/reset.less';
+@import 'variables.less';
+@import '../components/bootstrap/less/mixins.less';
+@import '../components/bootstrap/less/scaffolding.less';
+@import '../components/bootstrap/less/grid.less';
+@import '../components/bootstrap/less/layouts.less';
+@import '../components/bootstrap/less/type.less';
+@import '../components/bootstrap/less/navs.less';
+@import '../components/bootstrap/less/navbar.less';
+@import '../components/bootstrap/less/utilities.less';
+@import 'app.less';

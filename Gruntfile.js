@@ -20,12 +20,17 @@ module.exports = function (grunt) {
 			}
 		},
 		recess: {
-			hd: {
-				src: [
-					'scripts/bootstrap.less',
-					'scripts/main.less'
-				],
+			main: {
+				src: 'scripts/main.less',
 				dest: 'lib/style.min.css',
+				options: {
+					compile: true,
+					compress: true
+				}
+			},
+			responsive: {
+				src: 'scripts/responsive.less',
+				dest: 'lib/responsive.min.css',
 				options: {
 					compile: true,
 					compress: true

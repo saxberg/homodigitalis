@@ -1,0 +1,76 @@
+body {
+	position: relative;
+	background-color: @hdBG;
+	padding-top: 50px;
+}
+
+footer {
+	margin-top: 20px;
+	background-color: #000;
+	color: @grayLight;
+	padding: 50px;
+	a {
+		color: @grayLighter;
+	}
+}
+
+.center {
+	text-align: center;
+}
+
+.anchor {
+	padding-top: 60px;
+	margin-top: -60px;
+}
+
+#slide1 {
+	background: url('/img/homodigitalis-9788777068393-3d.png') center center no-repeat;
+	background-size: contain;
+	margin: 25px auto;
+	max-width: 847px;
+	max-height: 673px;
+}
+
+#bookindex {
+	margin-top: 50px;
+	.affix {
+		top: 80px;
+		bottom: auto;
+	}
+	@media (max-width: 767px) {
+		.affix {
+			position: static;
+			top: 0;
+			width: auto;
+		}
+	}
+	.affix-bottom {
+		position: absolute;
+		top: auto;
+		bottom: 425px;
+	}
+}
+
+#bookexcerpt {
+	margin-top: 40px;
+}
+
+#sources {
+	margin-bottom: 40px;
+	h1 {
+		margin: 40px auto;
+	}
+	section {
+		column-count: 3;
+		column-gap: 20px;
+		-moz-column-count: 3;
+		-moz-column-gap: 20px;
+		-webkit-column-count: 3;
+		-webkit-column-gap: 20px;
+	}
+}
+
+#Natasha {
+	margin-top: 20px;
+	min-height: 300px;
+}

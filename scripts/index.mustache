@@ -1,9 +1,6 @@
 <!-- 
-
 	made by @webjay
-
 	Repository: https://github.com/saxberg/homodigitalis
-	
 -->
 <!DOCTYPE html>
 <html lang="da">
@@ -13,6 +10,7 @@
 	<meta name="description" content="{{description}}">
 	<meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" href="lib/style.min.css">
+	<link rel="stylesheet" href="lib/responsive.min.css">
 	<!--[if lt IE 9]>
 	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
@@ -45,11 +43,9 @@
 
 	<div class="container">
 
-		<section id="slide1">
-			<img src="img/homodigitalis-9788777068393-3d.png" alt="{{title}}">
-		</section>
+		<section id="slide1"></section>
 		
-		<section id="bookexcerpt" class="row">
+		<section class="row">
 
 			<div class="span4">
 				<nav id="bookindex">
@@ -77,7 +73,7 @@
 			</div>
 			
 			<div class="span8">
-				<article itemscope itemtype="http://schema.org/Book">
+				<article  id="bookexcerpt" itemscope itemtype="http://schema.org/Book">
 				{{#book}}
 
 					<hgroup>

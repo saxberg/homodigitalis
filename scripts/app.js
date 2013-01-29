@@ -1,15 +1,27 @@
 jQuery(function($){
 	
+	// size #slide1
+	$(window).resize(function(){
+		$('#slide1').css({
+			height: $(window).height() - 100
+		});
+	});
+	$(window).resize();
+	
+	// click #slide1 scrolls to #bookindex
+	$('#slide1').on('click', function(){
+		$('html, body').animate({
+			scrollTop: $('#bookindex').position().top - 20
+		}, 888);
+	});
+	
 	// set affix for book menu
 	$('#bookindex ol').affix({
 		offset: {
 			top: function () {
-				var pos = $('#bookexcerpt').position();
-				return pos.top - $('#topnav').outerHeight(true);
+				return $('#bookexcerpt').position().top - $('#topnav').outerHeight(true);
 			},
-			bottom: function () {
-				return $('#Natasha').outerHeight(true);
-			}
+			bottom: 425
 		}
 	});
 
