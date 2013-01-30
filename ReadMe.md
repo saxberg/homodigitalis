@@ -8,8 +8,14 @@ Assuming you have [npm](http://nodejs.org/) installed, `npm install` will downlo
 
 Files in _scripts_ will by the command `grunt` be transmogriffed into the files you see in the _gh-pages_ branch serving [homodigitalis.org](http://homodigitalis.org/).
 
-Any [questions](http://twitter.com/webjay)?
+## Ship it
+
+`grunt gitploy` will send the relevant files (_paths_ in _Gruntfile.js_) to the `gh-pages` branch on GitHub.
 
 ## License
 
 Feel free to copy the source code I made.
+
+---
+
+Any [questions](http://twitter.com/webjay)?
