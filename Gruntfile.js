@@ -27,14 +27,6 @@ module.exports = function (grunt) {
 					compile: true,
 					compress: true
 				}
-			},
-			responsive: {
-				src: 'scripts/responsive.less',
-				dest: 'lib/responsive.min.css',
-				options: {
-					compile: true,
-					compress: true
-				}
 			}
 		},
 		template: {
