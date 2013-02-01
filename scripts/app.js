@@ -70,7 +70,7 @@ jQuery(function($){
 	    // init the FB JS SDK
 		FB.init({
 			appId: '155692864582714',
-			channelUrl: '//homodigitalis.org/fbchannel.html'
+			channelUrl: '//homodigitalis.org/fbchannel.html',
 			status: true,
 			xfbml: true
 		});
