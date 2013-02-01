@@ -48,7 +48,8 @@ jQuery(function($){
 	// Facebook
 
 	window.fbAsyncInit = function(){
-		
+
+		/*
 		var access_token = null;
 
 		FB.Event.subscribe('auth.statusChange', function (response) {
@@ -66,22 +67,22 @@ jQuery(function($){
 				book: 'http://homodigitalis.org/'
 			}, function(){});
 		});
+		*/
 
 	    // init the FB JS SDK
 		FB.init({
 			appId: '155692864582714',
-			channelUrl: 'http://homodigitalis.org/channel.html',
-			status: true,
-			xfbml: true
+			channelUrl: '//homodigitalis.org/channel.html',
+			status: false,
+			xfbml: true,
+			cookie: false
 		});
 
 	};
 
-	(function() {
-		var e = document.createElement('script'); e.async = true;
-		e.src = document.location.protocol +
-		'//connect.facebook.net/en_US/all.js';
-		document.getElementById('fb-root').appendChild(e);
-	}());	
+	$.ajaxSetup({
+		cache: true
+	});	
+	$.getScript('//connect.facebook.net/en_US/all.js');
 
 });

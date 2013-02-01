@@ -32,8 +32,15 @@ footer {
 	max-height: 673px;
 	.fb-like {
 		position: absolute;
-		right: 150px;
+		right: 125px;
 		bottom: 25px;
+	}
+	@media (max-width: 767px) {
+		.fb-like {
+			right: auto;
+			left: 0;
+			bottom: 0;
+		}
 	}
 }
 
