@@ -43,5 +43,37 @@ jQuery(function($){
 			document.location.href = url;
 		}
 	});
+
+
+	// Facebook
+
+	window.fbAsyncInit = function(){
+		
+		var access_token = null;
+
+		FB.Event.subscribe('auth.statusChange', function (response) {
+			if (response.status == 'connected') {
+				access_token = response.authResponse.accessToken;
+			}
+		});
+		
+		FB.Event.subscribe('edge.create', function (response) {
+			if (access_token == null) {
+				return;
+			}
+			FB.api('/me/homodigitalis:toread', 'post', {
+				access_token: access_token,
+				book: 'http://homodigitalis.org/'
+			}, function(){});
+		});
+
+	    // init the FB JS SDK
+		FB.init({
+			appId: '155692864582714', // App ID from the App Dashboard
+			status: true, // check the login status upon init?
+			xfbml: true  // parse XFBML tags on this page?
+		});
+
+	};
 	
 });
