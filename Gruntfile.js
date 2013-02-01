@@ -64,7 +64,7 @@ module.exports = function (grunt) {
 			});
 		};
 		var done = this.async();
-		var paths = ['img', 'lib', 'media', '404.html', 'BingSiteAuth.xml', 'CNAME', 'favicon.ico', 'google001da78e150395d4.html', 'index.html', 'kilder.html', 'robots.txt', 'sitemap.xml']
+		var paths = ['img', 'lib', 'media', '404.html', 'BingSiteAuth.xml', 'CNAME', 'favicon.ico', 'google001da78e150395d4.html', 'index.html', 'kilder.html', 'robots.txt', 'sitemap.xml', 'fbchannel.html']
 		run('git checkout gh-pages', function(){
 			run('git checkout master -- ' + paths.join(' '), function(){
 				run('git commit -am "updates from master"', function(){
