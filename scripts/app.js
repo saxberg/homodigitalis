@@ -69,9 +69,10 @@ jQuery(function($){
 
 	    // init the FB JS SDK
 		FB.init({
-			appId: '155692864582714', // App ID from the App Dashboard
-			status: true, // check the login status upon init?
-			xfbml: true  // parse XFBML tags on this page?
+			appId: '155692864582714',
+			channelUrl: '//homodigitalis.org/fbchannel.html'
+			status: true,
+			xfbml: true
 		});
 
 	};
