@@ -46,43 +46,44 @@ jQuery(function($){
 
 
 	// Facebook
+	if ($('#fb-root').length > 0) {
+		window.fbAsyncInit = function(){
 
-	window.fbAsyncInit = function(){
+			/*
+			var access_token = null;
 
-		/*
-		var access_token = null;
-
-		FB.Event.subscribe('auth.statusChange', function (response) {
-			if (response.status == 'connected') {
-				access_token = response.authResponse.accessToken;
-			}
-		});
+			FB.Event.subscribe('auth.statusChange', function (response) {
+				if (response.status == 'connected') {
+					access_token = response.authResponse.accessToken;
+				}
+			});
 		
-		FB.Event.subscribe('edge.create', function (response) {
-			if (access_token == null) {
-				return;
-			}
-			FB.api('/me/homodigitalis:toread', 'post', {
-				access_token: access_token,
-				book: 'http://homodigitalis.org/'
-			}, function(){});
-		});
-		*/
+			FB.Event.subscribe('edge.create', function (response) {
+				if (access_token == null) {
+					return;
+				}
+				FB.api('/me/homodigitalis:toread', 'post', {
+					access_token: access_token,
+					book: 'http://homodigitalis.org/'
+				}, function(){});
+			});
+			*/
 
-	    // init the FB JS SDK
-		FB.init({
-			appId: '155692864582714',
-			channelUrl: '//homodigitalis.org/channel.html',
-			status: false,
-			xfbml: true,
-			cookie: false
-		});
+		    // init the FB JS SDK
+			FB.init({
+				appId: '155692864582714',
+				channelUrl: '//homodigitalis.org/channel.html',
+				status: false,
+				xfbml: true,
+				cookie: false
+			});
 
-	};
+		};
 
-	$.ajaxSetup({
-		cache: true
-	});	
-	$.getScript('//connect.facebook.net/en_US/all.js');
+		$.ajaxSetup({
+			cache: true
+		});	
+		$.getScript('//connect.facebook.net/en_US/all.js');
+	}
 
 });
