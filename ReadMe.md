@@ -10,7 +10,7 @@ Files in _scripts_ will by the command `grunt` be transmogriffed into the files 
 
 ## Ship it
 
-`grunt gitploy` will send the relevant files (*paths* in *Gruntfile.js*) to the `gh-pages` branch on GitHub.
+[Journster](http://www.journster.com) handles `grunt` and deploys to the `gh-pages` branch on GitHub.
 
 ## License
 
