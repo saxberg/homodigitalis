@@ -12,10 +12,6 @@ Files in _scripts_ will by the command `grunt` be transmogriffed into the files 
 
 [Journster](http://www.journster.com) handles `grunt` and deploys to the `gh-pages` branch on GitHub.
 
-## License
-
-Feel free to copy the source code I made.
-
 ---
 
 Any [questions](http://twitter.com/webjay)?
